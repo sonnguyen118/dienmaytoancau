@@ -1,0 +1,206 @@
+.products {
+  @extend Flex_start;
+  margin: 0 10%;
+  &__left {
+    width: 20vw;
+    &-filter {
+      &-title {
+        @extend Flex_center;
+        margin-top: 50px;
+        &-icon {
+          font-size: 30px;
+          color: $color-primary;
+        }
+        &-text {
+          font-size: 24px;
+          margin-left: 20px;
+        }
+      }
+      &-block {
+        margin-top: 30px;
+        border-bottom: 0.5px solid #ccc;
+        padding-bottom: 20px;
+        &-title {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        &-group {
+          @extend Flex_center;
+          margin-left: 20px;
+          margin-bottom: 10px;
+
+          &-btn {
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+          }
+          &-label {
+            margin-left: 16px;
+            font-size: 18px;
+            &-sub {
+              margin-left: 10px;
+              color: #bfbfbf;
+            }
+          }
+        }
+        &-add {
+          @extend Flex_center;
+          margin-top: 20px;
+          &-text {
+            font-size: 20px;
+            margin-left: 63px;
+          }
+          &-icon {
+            font-size: 20px;
+            margin-left: 30px;
+          }
+        }
+        &-price {
+          @extend Flex_center_spacebetween;
+          &-input {
+            height: 40px;
+            padding: 10px;
+            width: 40%;
+          }
+          &-space {
+            height: 1px;
+            width: 15px;
+            background-color: #bfbfbf;
+          }
+        }
+        &-btn {
+          background-color: $color-primary;
+          text-align: center;
+          margin: 20px 0;
+          padding: 10px 0;
+          font-size: 18px;
+          color: $color-white;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  &__right {
+    margin-left: 30px;
+    width: 60vw;
+    &-wrap {
+      margin-left: 15px;
+      margin-top: 40px;
+      &-title {
+        font-size: 24px;
+        color: $color-primary;
+        &-span {
+          color: $color-secondary;
+          font-family: Averta-Semibold;
+        }
+      }
+      &-header {
+        margin-top: 30px;
+        @extend Flex_center_spacebetween;
+        &-sort {
+          @extend Flex_center;
+          &-text {
+          }
+          &-btn {
+            font-size: 18px;
+            border: 0.5px solid #bfbfbf;
+            width: 180px;
+            padding: 10px 0;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 3px;
+          }
+        }
+        &-pagination {
+          @extend Flex_center;
+          &-number {
+            font-size: 16px;
+            &-1 {
+              color: $color-secondary;
+            }
+            &-2 {
+            }
+            margin-right: 10px;
+          }
+          &-btn {
+            @extend Flex_center;
+            &-pre {
+              border: 0.5px solid #bfbfbf;
+              padding: 8px 15px;
+              border-radius: 3px;
+            }
+            &-nex {
+              border: 0.5px solid #bfbfbf;
+              padding: 8px 15px;
+              border-radius: 3px;
+              background-color: #ededed;
+            }
+            &-icon {
+              font-size: 20px;
+              &-dis {
+                color: #ccc;
+              }
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    &-btn {
+      font-size: 20px;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      border-radius: 3px;
+      padding: 10px 20px;
+      margin: 0 auto;
+      text-align: center;
+      width: 400px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-list-category {
+    }
+    &-main {
+      margin-top: 10px;
+      position: relative;
+      &-text {
+        margin-top: 30px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 28px;
+      }
+      &-img {
+        position: relative;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+      }
+      &-seemore {
+        background-image: linear-gradient(transparent, white);
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        bottom: 0px;
+        &-btn {
+          position: absolute;
+          display: block;
+          font-size: 20px;
+          padding: 10px 0px;
+          text-align: center;
+          border: 1px solid $color-primary;
+          color: $color-primary;
+          bottom: 50px;
+          width: 360px;
+          left: calc(50% - 180px);
+          margin: 0 auto;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

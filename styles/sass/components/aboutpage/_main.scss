@@ -1,0 +1,118 @@
+.about {
+  margin: 50px 10%;
+  &__block1 {
+    margin-top: 50px;
+    &-group {
+      @extend Flex_center_spacebetween;
+      &-item {
+        @extend Flex_center;
+        margin: 0 50px;
+        &-icon {
+          font-size: 40px;
+          color: $color-primary;
+        }
+        &-text {
+          font-size: 24px;
+          margin-left: 20px;
+          font-family: Averta-ExtraBold;
+          color: $color-primary;
+        }
+      }
+    }
+    &-wall {
+      background-color: $color-primary;
+      height: 1px;
+      width: 100%;
+      margin: 50px 0;
+    }
+    &-location {
+      @extend Flex_center_spacebetween;
+      &-card {
+        background-color: $color-primary;
+        width: 360px;
+        padding: 30px;
+        border-radius: 5px;
+        &-title {
+          font-size: 20px;
+          font-family: Averta-ExtraBold;
+          text-align: center;
+          color: $color-white;
+        }
+        &-location {
+          margin-top: 20px;
+          @extend Flex_center;
+          &-icon {
+            font-size: 20px;
+            color: $color-white;
+          }
+          &-text {
+            font-size: 16px;
+            color: $color-white;
+            text-align: justify;
+            line-height: 20px;
+            margin-left: 10px;
+          }
+        }
+        &-phone {
+          margin-top: 20px;
+          @extend Flex_center_spacebetween;
+          &-z {
+            @extend Flex_center;
+          }
+          &-icon {
+            font-size: 20px;
+            color: $color-white;
+          }
+          &-text {
+            margin-left: 20px;
+            font-size: 16px;
+            color: $color-white;
+          }
+          &-group {
+            &-p {
+              font-size: 14px;
+              color: $color-white;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__block2 {
+    margin-top: 50px;
+    &-text {
+      font-size: 20px;
+      text-align: justify;
+      line-height: 26px;
+      margin: 20px 0;
+    }
+  }
+  &__block3 {
+    margin-top: 30px;
+    &-list {
+      // text-decoration: solid;
+      &-title {
+        list-style-type: number;
+        font-size: 20px;
+        font-family: Averta-Semibold;
+        margin-bottom: 10px;
+      }
+    }
+    &-ullist {
+      margin-top: 20px;
+      &-li {
+        margin-bottom: 10px;
+        &-icon {
+          font-size: 20px;
+          color: $color-primary;
+          margin-left: 25px;
+        }
+        &-p {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

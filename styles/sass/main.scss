@@ -1,0 +1,25 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/utilities";
+
+@import "components/home/main";
+
+@import "components/layout/navbarpc";
+@import "components/layout/footer";
+@import "components/layout/listproducts";
+@import "components/layout/trademark";
+@import "components/layout/listcategory";
+
+@import "layout/grid";
+
+@import "components/aboutpage/main";
+@import "components/productpage/main";
+@import "components/productpage/productslist";
+@import "components/layout/pagination";
+@import "components/layout/loading";
+
+@import "components/news/listnewpage";
+
+@import "components/contact/main";

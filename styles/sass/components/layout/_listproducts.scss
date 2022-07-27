@@ -1,0 +1,27 @@
+.list_products {
+  border: 1px solid #bebebe;
+  &-item {
+    border-bottom: 1px dashed #bebebe;
+    @extend Flex_center_spacebetween;
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+    padding: 10px 20px;
+    &-title {
+      @extend Flex_center;
+      &-icon {
+        position: relative;
+        width: 30px;
+        height: 30px;
+      }
+      &-text {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+    &-icon {
+      font-size: 20px;
+      color: #bebebe;
+    }
+  }
+}

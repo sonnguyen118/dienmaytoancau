@@ -1,0 +1,115 @@
+// base SCSS for Navbar PC
+.navbarpc {
+  &-top {
+    @extend Flex_center_spacebetween;
+    padding: 10px 10%;
+    &-text {
+      font-family: Averta-Thin;
+      font-size: 14px;
+    }
+    &-contact {
+      &-group {
+        @extend Flex_center;
+        &-icon {
+          font-size: 20px;
+          color: $color-primary;
+          margin-left: 20px;
+        }
+        &-text {
+          font-family: Averta-Thin;
+          font-size: 14px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &-main {
+    padding: 30px 10%;
+    background-color: $color-primary;
+    @extend Flex_center_spacebetween;
+    &-logo {
+      @extend Image_settings;
+      width: 260px;
+      height: 60px;
+    }
+    &-search {
+      position: relative;
+      &-input {
+        width: 800px;
+        height: 60px;
+        border-radius: 30px;
+        padding-left: 30px;
+        font-size: 18px;
+        font-family: Averta-Regular;
+      }
+      &-btn {
+        background-color: $color-yellow;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        &-icon {
+          font-size: 20px;
+          color: $color-primary;
+          position: relative;
+          top: 16px;
+          left: 16px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &-cart {
+      @extend Flex_center;
+      background-color: $color-yellow;
+      height: 60px;
+      border-radius: 30px;
+      padding: 0 30px;
+      position: relative;
+      &-icon {
+        font-size: 20px;
+        color: $color-primary;
+      }
+      &-text {
+        font-size: 20px;
+        color: $color-primary;
+        margin-left: 10px;
+      }
+      &-sudo {
+        position: absolute;
+        top: -10px;
+        background-color: $color-bright-red;
+        color: $color-white;
+        font-size: 14px;
+        padding: 6px;
+        border-radius: 50%;
+        right: 0;
+      }
+    }
+  }
+  &-menu {
+    @extend Flex_center;
+    margin: 20px 10%;
+    &-group {
+      @extend Flex_center;
+      &-icon {
+        font-size: 24px;
+        margin-right: 15px;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+      }
+    }
+    &-text {
+      margin-right: 80px;
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.contact {
+  margin: 20px 10%;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 60px;
+  &-title {
+    font-size: 26px;
+    color: $color-primary;
+  }
+  &-block {
+    margin-top: 50px;
+    @extend Flex_start_spacebetween;
+    &-left {
+      width: 45%;
+      &-text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        &-linkmaps {
+          color: $color-primary;
+          font-family: Averta-Semibold;
+        }
+      }
+    }
+    &-right {
+      width: 45%;
+      &-title {
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 30px;
+      }
+      &-form {
+        &-box {
+          @extend Flex_start_spacebetween;
+          margin-bottom: 30px;
+          &-input {
+            width: 45%;
+            height: 45px;
+            border-radius: 5px;
+          }
+        }
+        &-input {
+          width: 100%;
+          margin-bottom: 30px;
+          height: 45px;
+          border-radius: 5px;
+        }
+        &-textarea {
+          margin-bottom: 30px;
+          width: 100%;
+          height: 200px;
+          border-radius: 5px;
+        }
+        &-recapcha {
+          display: block;
+          width: 100%;
+          height: 100px;
+          &-block {
+            width: 100%;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.list-category {
+  width: 60vw;
+  &-group {
+    @extend Flex_center;
+    flex-wrap: wrap;
+    &-item {
+      border: 0.5px solid #bfbfbf;
+      @extend Background_image;
+      width: calc((100%-120px) / 9);
+      height: 80px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+    &-last {
+      width: calc((100%-120px) / 9);
+      text-align: center;
+      margin-left: 15px;
+      border: 0.5px solid #bfbfbf;
+      height: 80px;
+      margin-top: -15px;
+    }
+  }
+}
