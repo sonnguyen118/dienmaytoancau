@@ -1,9 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ProductsPage from "../san-pham/index";
-import AboutPage from "../gioi-thieu/index";
-import ContactPage from "../lien-he/index";
-import NewsPage from "../tin-tuc/index";
 import Link from "next/link";
 
 const NavbarPC = () => {

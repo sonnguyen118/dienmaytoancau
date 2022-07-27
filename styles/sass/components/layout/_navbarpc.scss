@@ -24,19 +24,20 @@
     }
   }
   &-main {
-    padding: 30px 10%;
+    padding: 25px 10%;
     background-color: $color-primary;
     @extend Flex_center_spacebetween;
     &-logo {
       @extend Image_settings;
-      width: 260px;
-      height: 60px;
+      width: 200px;
+      height: 46px;
     }
     &-search {
       position: relative;
       &-input {
         width: 800px;
-        height: 60px;
+        margin-left: 15px;
+        height: 50px;
         border-radius: 30px;
         padding-left: 30px;
         font-size: 18px;
@@ -44,17 +45,17 @@
       }
       &-btn {
         background-color: $color-yellow;
-        height: 50px;
-        width: 50px;
+        height: 46px;
+        width: 46px;
         border-radius: 50%;
         position: absolute;
-        right: 5px;
-        top: 4px;
+        right: 3px;
+        top: 2px;
         &-icon {
           font-size: 20px;
           color: $color-primary;
           position: relative;
-          top: 16px;
+          top: 14px;
           left: 16px;
         }
         &:hover {
@@ -65,7 +66,7 @@
     &-cart {
       @extend Flex_center;
       background-color: $color-yellow;
-      height: 60px;
+      height: 50px;
       border-radius: 30px;
       padding: 0 30px;
       position: relative;
@@ -92,7 +93,7 @@
   }
   &-menu {
     @extend Flex_center;
-    margin: 20px 10%;
+    margin: 30px 10% 35px 10%;
     &-group {
       @extend Flex_center;
       &-icon {
@@ -105,7 +106,12 @@
       }
     }
     &-text {
+      font-size: 20px;
       margin-right: 80px;
+      &:nth-child(2) {
+        margin-left: 25px;
+      }
+
       &:hover {
         cursor: pointer;
         color: $color-primary;

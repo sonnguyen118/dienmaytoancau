@@ -574,15 +574,19 @@ const MyProduct = () => {
               </div>
             </div>
             <div className="myproduct-left-block4-comment">
+              <p className="myproduct-left-block4-comment-title">
+                Bạn đang băn khoăn cần tư vấn? Vui lòng để lại số điện thoại
+                hoặc lời nhắn. Chúng tôi sẽ liên hệ trả lời bạn sớm nhất
+              </p>
               <div className="myproduct-left-block4-comment-a">
                 <textarea
-                  placeholder=""
+                  placeholder="Nhập câu hỏi/ bình luận / nhận xét tại đây ..."
                   type="text"
                   className="myproduct-left-block4-comment-a-textarea"
                 ></textarea>
                 <div className="myproduct-left-block4-comment-a-button">
-                  <i className="fas fa-camera myproduct-left-block4-comment-a-button"></i>
-                  <span className="myproduct-left-block4-comment-a-button">
+                  <i className="fas fa-camera myproduct-left-block4-comment-a-button-icon"></i>
+                  <span className="myproduct-left-block4-comment-a-button-text">
                     Gửi ảnh
                   </span>
                 </div>
@@ -593,14 +597,157 @@ const MyProduct = () => {
                   placeholder="Nhập tên của bạn"
                   className="myproduct-left-block4-comment-b-input"
                 ></input>
-                <button className="myproduct-left-block4-comment-b">
+                <button className="myproduct-left-block4-comment-b-btn">
                   Gửi đánh giá
                 </button>
               </div>
             </div>
           </div>
+          <div className="myproduct-left-block2">
+            <div className="title">
+              <div className="title-wall"></div>
+              <h2 className="title-text">SẢN PHẨM CÙNG THƯƠNG HIỆU</h2>
+            </div>
+            <div className="home__block5-slider">
+              <div className="home__block2-slider-btn1" onClick={previous}>
+                <i className="fas fa-angle-left home__block2-slider-btn1-icon"></i>
+              </div>
+              <div className="home__block2-slider-btn2" onClick={next}>
+                <i className="fas fa-angle-right home__block2-slider-btn2-icon"></i>
+              </div>
+              <Slider ref={(c) => (slider.current = c)} {...settings}>
+                {itemBlock5.map((item, index) => (
+                  <>
+                    <div className="home__block5-slider-item">
+                      <div
+                        className="home__block5-slider-item-img"
+                        style={{ backgroundImage: `url(${item.img})` }}
+                      ></div>
+                      <p className="home__block5-slider-item-text">
+                        {item.title}
+                      </p>
+                      <p className="home__block5-slider-item-category">
+                        {item.category}
+                      </p>
+                      <div className="home__block5-slider-item-infor">
+                        <span className="home__block5-slider-item-infor-price">
+                          {item.price_new}đ
+                        </span>
+                        <div className="home__block5-slider-item-infor-social">
+                          <i className="fas fa-star home__block5-slider-item-infor-social-icon"></i>
+                          <i className="fas fa-star home__block5-slider-item-infor-social-icon"></i>
+                          <i className="fas fa-star home__block5-slider-item-infor-social-icon"></i>
+                          <i className="fas fa-star home__block5-slider-item-infor-social-icon"></i>
+                          <i className="fas fa-star home__block5-slider-item-infor-social-icon"></i>
+                          <span className="home__block5-slider-item-infor-social-text">
+                            ({item.comment})
+                          </span>
+                        </div>
+                      </div>
+                      <p className="home__block5-slider-item-oldprice">
+                        {item.price_old}đ
+                      </p>
+                    </div>
+                  </>
+                ))}
+              </Slider>
+            </div>
+          </div>
         </div>
-        <div className="myproduct-right"></div>
+        <div className="myproduct-right">
+          <div className="myproduct-right-block1">
+            <p className="myproduct-right-block1-title">Thông tin hữu ích</p>
+            <ul>
+              <li className="myproduct-right-block1-li">
+                <i className="myproduct-right-block1-li-icon fas fa-angle-right"></i>
+                <p className="myproduct-right-block1-li-p">
+                  Trung tâm bảo hành
+                </p>
+              </li>
+              <li className="myproduct-right-block1-li">
+                <i className="myproduct-right-block1-li-icon fas fa-angle-right"></i>
+                <p className="myproduct-right-block1-li-p">
+                  Hướng dẫn vận chuyển
+                </p>
+              </li>
+              <li className="myproduct-right-block1-li">
+                <i className="myproduct-right-block1-li-icon fas fa-angle-right"></i>
+                <p className="myproduct-right-block1-li-p">
+                  Hướng dẫn thanh toán
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div className="myproduct-right-block1">
+            <p className="myproduct-right-block1-title">Chat với chúng tôi</p>
+            <div className="myproduct-right-block1-btn">
+              <div className="myproduct-right-block1-btn-img"></div>
+              <div className="myproduct-right-block1-btn-img"></div>
+            </div>
+          </div>
+          <div className="myproduct-right-block2">
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">Hà Nội:</span>{" "}
+              Số 30 Phạm Văn Đồng - Quận Cầu Giấy - Hà Nội
+            </p>
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">
+                Hotline:
+              </span>{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0987 667 577
+              </span>{" "}
+              |{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0969 563 389
+              </span>
+            </p>
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">
+                Điện thoại:
+              </span>{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0938 385 333
+              </span>{" "}
+              |{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0869 682 688
+              </span>
+            </p>
+          </div>
+          <div className="myproduct-right-block2">
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">TP.HCM:</span>{" "}
+              Số 238 Hoàng Hoa Thám P.12. Q.Tân Bình, Tp.HCM
+            </p>
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">
+                Hotline:
+              </span>{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0987 667 577
+              </span>{" "}
+              |{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0969 563 389
+              </span>
+            </p>
+            <p className="myproduct-right-block2-line">
+              <span className="myproduct-right-block2-line-title">
+                Điện thoại:
+              </span>{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0938 385 333
+              </span>{" "}
+              |{" "}
+              <span className="myproduct-right-block2-line-title-red">
+                0869 682 688
+              </span>
+            </p>
+          </div>
+          <div className="myproduct-right-block3"></div>
+          <div className="myproduct-right-block4"></div>
+        </div>
       </div>
     </Layout>
   );

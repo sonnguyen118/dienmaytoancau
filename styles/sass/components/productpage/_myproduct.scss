@@ -4,7 +4,7 @@
   padding-top: 30px;
   @extend Flex_start_spacebetween;
   &-left {
-    width: 80%;
+    width: 78%;
     &-block1 {
       @extend Flex_start;
       &-slider {
@@ -253,6 +253,127 @@
           &-text {
             font-size: 18px;
             color: #666;
+          }
+        }
+      }
+      &-comment {
+        &-title {
+          margin-bottom: 5px;
+        }
+        &-a {
+          position: relative;
+          &-textarea {
+            width: 100%;
+            height: 80px;
+            font-family: Averta-Regular;
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            outline: none;
+            border: 1px solid #bfbfbf;
+          }
+          &-button {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            &:hover {
+              cursor: pointer;
+            }
+            &-icon {
+              color: $color-primary;
+              font-size: 20px;
+            }
+            &-text {
+              color: $color-primary;
+              font-size: 20px;
+              margin-left: 10px;
+            }
+          }
+        }
+        &-b {
+          margin-top: -5px;
+          border: 1px solid #bfbfbf;
+          height: 60px;
+          @extend Flex_center_spacebetween;
+          &-input {
+            width: 40%;
+            margin-left: 20px;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 3px;
+          }
+          &-btn {
+            background-color: $color-secondary;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            color: $color-white;
+            border-radius: 3px;
+            padding: 10px 20px;
+            margin-right: 20px;
+            &:hover {
+              cursor: pointer;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-right {
+    width: 22%;
+    margin-left: 30px;
+    &-block1 {
+      background-color: #fafafa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      &-title {
+        font-size: 18px;
+        color: $color-primary;
+      }
+      &-li {
+        @extend Flex_center;
+        margin: 15px 0;
+        &-icon {
+          font-size: 20px;
+        }
+        &-p {
+          font-size: 16px;
+          margin-left: 10px;
+        }
+      }
+      &-btn {
+        @extend Flex_center;
+        margin-top: 15px;
+        margin-left: 20px;
+        &-img {
+          @extend Background_image;
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+          border-radius: 5px;
+          &:nth-child(1) {
+            background-image: url("/components/fb.webp");
+          }
+          &:nth-child(2) {
+            background-image: url("/components/zl.png");
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &-block2 {
+      &-line {
+        text-align: justify;
+        font-size: 14px;
+        font-family: Averta-Semibold;
+        &-title {
+          color: $color-primary;
+          &-red {
+            color: $color-bright-red;
           }
         }
       }
