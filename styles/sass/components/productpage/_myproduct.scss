@@ -1,0 +1,261 @@
+.myproduct {
+  margin: 20px 10%;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 30px;
+  @extend Flex_start_spacebetween;
+  &-left {
+    width: 80%;
+    &-block1 {
+      @extend Flex_start;
+      &-slider {
+        width: 50%;
+        &-first {
+          //   height: 00px;
+          width: 100%;
+          &-item {
+            @extend Background_image;
+            height: 480px;
+            width: 100%;
+          }
+        }
+        &-second {
+          height: 80px;
+          width: 100%;
+          margin-top: 30px;
+          &-item {
+            @extend Background_image;
+            height: 80px;
+            width: 100px;
+            margin-left: 50px;
+          }
+        }
+      }
+      &-infor {
+        margin-left: 40px;
+        width: 50%;
+        &-title {
+          border-bottom: 1px solid #bfbfbf;
+          padding-bottom: 15px;
+          &-content {
+            font-family: Averta-Bold;
+            color: $color-primary;
+            margin-bottom: 15px;
+          }
+          &-social {
+            @extend Flex_center;
+            margin: 5px 0;
+            &-text {
+              font-size: 16px;
+              margin-right: 20px;
+            }
+            &-icon {
+              color: $color-orange;
+              font-size: 14px;
+            }
+          }
+          &-category {
+            &-text {
+              font-family: Averta-Bold;
+              color: $color-primary;
+            }
+          }
+        }
+        &-price {
+          margin: 15px 0 30px 0;
+          &-price {
+            @extend Flex_end;
+            &-new {
+              font-size: 28px;
+              color: $color-bright-red;
+              margin-bottom: -3px;
+              font-family: Averta-Bold;
+            }
+            &-old {
+              font-size: 16px;
+              color: #333;
+              text-decoration: line-through;
+              margin: 0 20px;
+            }
+            &-discount {
+              font-size: 16px;
+              color: #333;
+            }
+          }
+          &-state {
+            font-size: 16px;
+            margin: 10px 0;
+            &-text {
+              color: $color-primary;
+              font-size: 16px;
+              font-family: Averta-Bold;
+            }
+          }
+          &-choose {
+            @extend Flex_center;
+            &-text {
+              margin-right: 20px;
+            }
+            &-count {
+              margin-right: 20px;
+            }
+            &-icon {
+              font-size: 28px;
+              color: $color-primary;
+            }
+          }
+        }
+        &-btn {
+          @extend Flex_start_spacebetween;
+          &-item {
+            &:nth-child(1) {
+              background-color: $color-red;
+            }
+            &:nth-child(2) {
+              background-color: $color-primary;
+            }
+            border-radius: 3px;
+            width: 45%;
+            padding: 10px 0;
+            &-p {
+              text-align: center;
+              color: $color-white;
+              font-family: Averta-Bold;
+              font-size: 18px;
+            }
+            &-s {
+              text-align: center;
+              color: $color-white;
+              font-size: 12px;
+            }
+            &:hover {
+              cursor: pointer;
+              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+          }
+        }
+        &-ul {
+          margin-top: 30px;
+          &-li {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    &-block2 {
+      margin-top: 30px;
+      width: 100%;
+    }
+    &-block3 {
+      margin: 50px 0;
+      &-table {
+        margin: 40px 0;
+        @extend Flex_center;
+        width: 100%;
+        border: 1px solid #bfbfbf;
+        &-menu {
+          width: 35%;
+          padding-left: 10px;
+        }
+        &-value {
+          width: 65%;
+          //   padding-left: 50px;
+        }
+        &-text {
+          font-size: 20px;
+          line-height: 38px;
+          &:nth-child(odd) {
+            background-color: #fafafa;
+          }
+        }
+      }
+      &-parapharse {
+        &-text {
+          text-align: justify;
+          line-height: 28px;
+          font-size: 18px;
+        }
+        &-img {
+          width: 600px;
+          height: 400px;
+          margin: 30px auto;
+          background-color: aqua;
+        }
+      }
+    }
+    &-block4 {
+      margin-top: 50px;
+      &-title {
+        margin-top: 30px;
+        @extend Flex_center;
+        justify-content: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #bfbfbf;
+        &-1 {
+          margin-right: 30px;
+          width: 300px;
+          &-group {
+            text-align: center;
+            &-icon {
+              font-size: 20px;
+              color: $color-orange;
+            }
+          }
+          &-p {
+            font-size: 20px;
+            margin: 10px auto;
+            text-align: center;
+          }
+          &-s {
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+          }
+          &-n {
+            font-size: 52px;
+            color: #888;
+            font-family: Averta-Black;
+            text-align: center;
+          }
+        }
+        &-2 {
+          margin-left: 20px;
+          &-row {
+            margin-bottom: 7px;
+            @extend Flex_center;
+            &-text {
+              font-size: 20px;
+              color: #666;
+              margin-right: 10px;
+            }
+            &-icon {
+              color: #666;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &-share {
+        @extend Flex_center;
+        margin: 30px 0;
+        &-content {
+          font-size: 20px;
+          margin-right: 60px;
+        }
+        &-box {
+          width: 140px;
+          text-align: center;
+
+          &-icon {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 5px;
+          }
+          &-text {
+            font-size: 18px;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
