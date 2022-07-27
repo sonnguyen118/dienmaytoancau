@@ -745,7 +745,120 @@ const MyProduct = () => {
               </span>
             </p>
           </div>
-          <div className="myproduct-right-block3"></div>
+          <div className="myproduct-right-block3">
+            <p className="myproduct-right-block3-title">Hỗ trợ trực tuyến</p>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+            <div className="myproduct-right-block3-item">
+              <p className="myproduct-right-block3-item-title">
+                Kinh doanh dự án: 0987 667 577
+              </p>
+              <div className="myproduct-right-block3-item-social">
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+                <div className="myproduct-right-block3-item-social-img"></div>
+              </div>
+            </div>
+          </div>
+
           <div className="myproduct-right-block4"></div>
         </div>
       </div>

@@ -366,14 +366,52 @@
       }
     }
     &-block2 {
+      margin: 20px 0;
       &-line {
         text-align: justify;
         font-size: 14px;
         font-family: Averta-Semibold;
+        line-height: 24px;
+
         &-title {
           color: $color-primary;
           &-red {
             color: $color-bright-red;
+          }
+        }
+      }
+    }
+    &-block3 {
+      &-title {
+        font-size: 20px;
+        color: $color-primary;
+        margin-bottom: 15px;
+      }
+      &-item {
+        border-bottom: 1px solid #bfbfbf;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        &-title {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+        &-social {
+          @extend Flex_center;
+          &-img {
+            @extend Background_image;
+
+            width: 34px;
+            height: 34px;
+            &:nth-child(1) {
+              background-image: url("/components/social/skyper.png");
+            }
+            &:nth-child(2) {
+              background-image: url("/components/social/zalo.png");
+              margin: 0 20px;
+            }
+            &:nth-child(3) {
+              background-image: url("/components/social/viber.png");
+            }
           }
         }
       }
