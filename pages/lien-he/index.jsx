@@ -1,13 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/layout";
-// import Recaptcha from "react-recaptcha";
-// import reCAPTCHA from "react-google-recaptcha";
-// import ReCAPTCHA from "https://cdn.skypack.dev/react-google-recaptcha@2.1.0";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactPage = () => {
-  const testSiteKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
-
   return (
     <Layout>
       <div className="contact">
@@ -75,50 +71,49 @@ const ContactPage = () => {
               <div className="contact-block-right-form-box">
                 <input
                   type="text"
-                  placeholder=""
+                  placeholder="Họ và Tên"
                   className="contact-block-right-form-box-input"
                 ></input>
                 <input
                   type="text"
-                  placeholder=""
+                  placeholder="Điện thoại"
                   className="contact-block-right-form-box-input"
                 ></input>
               </div>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Email"
                 className="contact-block-right-form-input"
               ></input>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Tiêu đề thư"
                 className="contact-block-right-form-input"
               ></input>
               <textarea
                 type="text"
-                placeholder=""
+                placeholder="Nội dung"
                 className="contact-block-right-form-textarea"
               ></textarea>
-              {/* <Recaptcha
+              <ReCAPTCHA
+                size="normal"
                 sitekey="6LdJWSMhAAAAAPaN32qE11VJwISjT-PaptRIFuW9"
-                render="explicit"
-                verifyCallback={verifyCallback}
-                onloadCallback={callback}
-              /> */}
-              <div className="contact-block-right-form-recapcha">
-                <div
-                  className="g-recaptcha"
-                  data-callback="recaptchaCallback"
-                  data-sitekey="6LdJWSMhAAAAAPaN32qE11VJwISjT-PaptRIFuW9"
-                ></div>
-              </div>
+              />
 
-              <btn className="contact-block-right-form">GỬI ĐI</btn>
+              <button className="contact-block-right-form-btn">GỬI ĐI</button>
             </form>
           </div>
         </div>
 
-        <div className="contact-googlemaps"></div>
+        <div className="contact-googlemaps">
+          <Image
+            src={`/components/map.png`}
+            alt="Điện Máy Toàn Cầu"
+            layout="fill"
+            data-testid="close-icon"
+            objectFit="contain"
+          />
+        </div>
       </div>
     </Layout>
   );
