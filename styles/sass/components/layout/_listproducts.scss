@@ -1,27 +1,92 @@
 .list_products {
   border: 1px solid #bebebe;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   &-item {
     border-bottom: 1px dashed #bebebe;
     @extend Flex_center_spacebetween;
-    &:nth-last-child(1) {
-      border-bottom: none;
-    }
     padding: 10px 20px;
     &-title {
       @extend Flex_center;
+      transition: all linear 0.3s;
       &-icon {
-        position: relative;
+        @extend Background_image;
+        background-image: url("/components/block4/arrow_disable.png");
         width: 30px;
         height: 30px;
       }
       &-text {
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 20px;
+        font-family: Averta-Bold;
+        color: #333;
       }
     }
     &-icon {
       font-size: 20px;
       color: #bebebe;
+    }
+  }
+  &-submenu {
+    display: none;
+    // display: block;
+    position: absolute;
+    // background-color: aqua;
+    z-index: 20;
+    width: 600px;
+    height: 715px;
+    left: 28%;
+    top: 230px;
+    padding: 0px 0px;
+    margin-left: -40px;
+    &-block {
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: left;
+      // background-color: #333;
+      margin-left: 38px;
+      height: 715px;
+      &-item {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 30px;
+        border: 1px solid #bfbfbf;
+        background-color: $color-white;
+        width: 50%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        // margin-right: 10px;
+        &:hover {
+          background-color: $color-primary;
+          color: $color-white;
+        }
+      }
+    }
+  }
+  &-menu {
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .list_products-item-icon,
+    &:hover .list_products-item-title-text {
+      color: $color-primary;
+      transition: all ease-out 0.3s;
+    }
+    &:hover .list_products-submenu {
+      display: block;
+      transform: translateX(40px);
+      transition: transform 3s;
+    }
+    &:nth-last-child(1) > .list_products-item {
+      border-bottom: none;
+    }
+    &:hover .list_products-item-title-icon {
+      background-image: url("/components/block4/arrow_activate.png");
+      transition: all ease-out 0.3s;
+      transform: rotate(90deg);
+    }
+    &:hover .list_products-item-title {
+      padding-left: 5px;
+      transition: all linear 0.3s;
     }
   }
 }
