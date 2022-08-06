@@ -41,11 +41,13 @@ const NavbarPC = () => {
             <i className="fas fa-search navbarpc-main-search-btn-icon" />
           </div>
         </form>
-        <div className="navbarpc-main-cart">
-          <i className="fas fa-shopping-cart navbarpc-main-cart-icon"></i>
-          <p className="navbarpc-main-cart-text">Giỏ hàng</p>
-          <div className="navbarpc-main-cart-sudo">20</div>
-        </div>
+        <Link href={"gio-hang"}>
+          <a className="navbarpc-main-cart">
+            <i className="fas fa-shopping-cart navbarpc-main-cart-icon"></i>
+            <p className="navbarpc-main-cart-text">Giỏ hàng</p>
+            <div className="navbarpc-main-cart-sudo">20</div>
+          </a>
+        </Link>
       </div>
       <div className="navbarpc-menu">
         <div className="navbarpc-menu-group">

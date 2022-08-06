@@ -7,6 +7,7 @@ import Products from "../components/products/products";
 import Trademark from "../components/trademark";
 import Pagination from "../components/pagination";
 import LoadingComponent from "../components/loading/loading_component";
+import CounterInput from "react-counter-input";
 
 const ProductsPage = () => {
   const Search = ["Máy chạy thận"];

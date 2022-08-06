@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "google-map-react": "^2.2.0",
+    "admin-lte": "^3.2",
+    "jquery": "^3.6.0",
     "next": "12.2.3",
     "node-sass": "^7.0.1",
     "react": "18.2.0",
